@@ -163,6 +163,7 @@ services:
       # Enable redirection for HTTP and HTTPS
       - traefik.http.routers.${STACK_NAME?Variable not set}-frontend-http.middlewares=https-redirect
     
+  # Neo4j
   neo4j:
     image: neo4j:5.11.0
     container_name: neo4j
