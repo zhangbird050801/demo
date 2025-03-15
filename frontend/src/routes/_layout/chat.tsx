@@ -117,14 +117,14 @@ function Chat() {
           borderBottomWidth="1px"
           bg="white"
         >
-          <Text fontWeight="bold" fontSize="lg">Chat Assistant</Text>
+          <Text fontWeight="bold" fontSize="lg">问答助手</Text>
           <Button
             onClick={clearChat}
             size="sm"
             variant="ghost"
           >
             <Box mr={1}><FiTrash2 /></Box>
-            Clear
+            清除
           </Button>
         </Flex>
         
@@ -211,7 +211,7 @@ function Chat() {
             disabled={!inputMessage.trim() || isLoading}
           >
             <Box mr={1}><FiSend /></Box>
-            Send
+            发送
           </Button>
         </Flex>
       </Box>
