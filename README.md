@@ -80,7 +80,14 @@ docker-compose down
 
 
 
-## 常见问题
+## 注意事项
 
-- 修改了前端代码但是重新启动应用并没有变化。
-  - 需要重新构建
+- 前端代码但是重新启动应用并没有变化。
+
+  - 需要重新构建。我在项目根目录的 scripts 文件中提供了 `rebuild-frontend.sh` 脚本，用于自动化重新构建。在根目录下使用:
+
+    ```shell
+    ./scripts/rebuild-frontend.sh
+    ```
+
+    
