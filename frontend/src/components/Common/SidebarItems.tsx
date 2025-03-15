@@ -4,6 +4,7 @@ import { Link as RouterLink } from "@tanstack/react-router";
 import { FiBriefcase, FiHome, FiSettings, FiUsers } from "react-icons/fi";
 import type { IconType } from "react-icons/lib";
 import { RiRobot2Line } from "react-icons/ri";
+import { FiShare2 } from "react-icons/fi";
 
 import type { UserPublic } from "@/client";
 
@@ -15,6 +16,7 @@ const items = [
     title: "问答助手",
     path: "/chat",
   },
+  { icon: FiShare2, title: "知识图谱", path: "/kg" },
   { icon: FiSettings, title: "用户设置", path: "/settings" },
 ];
 

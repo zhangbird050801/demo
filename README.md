@@ -1,6 +1,8 @@
 
 
-我采用的是官方提供的 Fastapi + React 全栈模板。官方 Readme 在根目录下的 `README-official.md`，可以参考。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+我采用的是官方提供的 Fastapi + React 全栈模板来进行一键部署，官方链接位于 https://github.com/fastapi/full-stack-fastapi-template。官方 Readme 在本项目根目录下的 `README-official.md`，可以参考。
+
+模板里没有接入 Neo4j，所以我进行了 Neo4j 的接入。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 ## 前置
 
@@ -90,4 +92,16 @@ docker-compose down
     ./scripts/rebuild-frontend.sh
     ```
 
-    
+    他将会自动执行
+
+    ```shell
+    docker-compose down
+    docker-compose build frontend
+    docker-compose up -d
+    ```
+
+​		  并且会输出日志。类似于下图：
+
+<img src="img/image-20250315160315751.png" alt="image-20250315160315751" style="zoom:67%;" />
+
+## 项目结构
