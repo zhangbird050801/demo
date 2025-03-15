@@ -1,6 +1,8 @@
 
 
-我采用的是官方提供的 Fastapi + React 全栈模板来进行一键部署，官方链接位于 https://github.com/fastapi/full-stack-fastapi-template。官方 Readme 在本项目根目录下的 `README-official.md`，可以参考。
+我采用的是官方提供的 Fastapi + React 全栈模板来进行一键部署，官方链接位于 https://github.com/fastapi/full-stack-fastapi-template。
+
+官方 Readme 在本项目根目录下的 `README-official.md`，可以参考。
 
 模板里没有接入 Neo4j，所以我进行了 Neo4j 的接入。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 

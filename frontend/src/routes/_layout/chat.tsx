@@ -97,17 +97,16 @@ function Chat() {
   };
 
   return (
-    <Container maxW="full" p={4}>
+    <Container maxW="full" h="100vh" p={4}>
       {/* 聊天界面容器 */}
-      <Box 
+      <Flex 
+        direction="column" 
+        h="100%" 
         maxW="container.lg" 
         mx="auto"
-        mt={4}
         borderWidth="1px"
         borderRadius="lg"
         overflow="hidden"
-        height="1100px"  // 固定高度
-        position="relative"
       >
         {/* Header */}
         <Flex 
@@ -131,7 +130,7 @@ function Chat() {
         {/* Messages Area */}
         <Box 
           ref={messagesContainerRef}
-          height="calc(100% - 130px)"
+          flex={1}
           overflowY="auto" 
           p={4}
           bg="gray.50"
@@ -186,14 +185,11 @@ function Chat() {
           )}
         </Box>
         
-        {/* Input Area - 固定在底部 */}
+        {/* Input Area */}
         <Flex 
           p={4} 
           borderTopWidth="1px"
           bg="white"
-          position="absolute"
-          bottom="0"
-          width="100%"
         >
           <Input
             flex={1}
@@ -214,7 +210,9 @@ function Chat() {
             发送
           </Button>
         </Flex>
-      </Box>
+      </Flex>
     </Container>
   );
 }
+
+export default Chat;
